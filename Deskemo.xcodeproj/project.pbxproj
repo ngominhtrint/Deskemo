@@ -10,6 +10,8 @@
 		01973702E93F0B70C2DBC6AF /* Pods_DeskemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */; };
 		4D3C58954E034FAFEEF5EFE3 /* Pods_Deskemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */; };
 		5A6484935C4AE907D549FB00 /* Pods_DeskemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */; };
+		6C4B22DBFF6C64C0EAF35593 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43F0672B2EED27733ADFB24 /* Pods_Domain.framework */; };
+		E476878A18F7F37E74C305E8 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395415ED599E7CD511D5FACD /* Pods_DomainTests.framework */; };
 		EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16521EDF9AA00112168 /* AppDelegate.swift */; };
 		EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16721EDF9AA00112168 /* ViewController.swift */; };
 		EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA16921EDF9AA00112168 /* Main.storyboard */; };
@@ -18,6 +20,16 @@
 		EB2EA17321EDF9AB00112168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */; };
 		EB2EA17E21EDF9AB00112168 /* DeskemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA17D21EDF9AB00112168 /* DeskemoTests.swift */; };
 		EB2EA18921EDF9AB00112168 /* DeskemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */; };
+		EBE2944721EE18520089B88B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2943E21EE18520089B88B /* Domain.framework */; };
+		EBE2944E21EE18520089B88B /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2944D21EE18520089B88B /* DomainTests.swift */; };
+		EBE2945021EE18520089B88B /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE2944021EE18520089B88B /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE2945321EE18520089B88B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2943E21EE18520089B88B /* Domain.framework */; };
+		EBE2945421EE18520089B88B /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2943E21EE18520089B88B /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBE2945E21EE18BC0089B88B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2945D21EE18BC0089B88B /* Post.swift */; };
+		EBE2946021EE1DBB0089B88B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2945F21EE1DBB0089B88B /* User.swift */; };
+		EBE2946321EE21680089B88B /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2946221EE21680089B88B /* PostsUseCase.swift */; };
+		EBE2946521EE23320089B88B /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2946421EE23320089B88B /* UserUseCase.swift */; };
+		EBE2946721EE23860089B88B /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2946621EE23860089B88B /* UseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +47,57 @@
 			remoteGlobalIDString = EB2EA16121EDF9AA00112168;
 			remoteInfo = Deskemo;
 		};
+		EBE2944821EE18520089B88B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2EA15A21EDF9AA00112168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE2943D21EE18520089B88B;
+			remoteInfo = Domain;
+		};
+		EBE2944A21EE18520089B88B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2EA15A21EDF9AA00112168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2EA16121EDF9AA00112168;
+			remoteInfo = Deskemo;
+		};
+		EBE2945121EE18520089B88B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2EA15A21EDF9AA00112168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE2943D21EE18520089B88B;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBE2945A21EE18520089B88B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBE2945421EE18520089B88B /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01A1AB3906E337DA10E8A143 /* Pods-DeskemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoUITests/Pods-DeskemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		11DE27A816B070AB9700CE35 /* Pods-DeskemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeskemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeskemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		395415ED599E7CD511D5FACD /* Pods_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F63C188805BA6BA11FD1DE1 /* Pods-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 		42BC9D8E51EB6D136BFB7900 /* Pods-Deskemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo.release.xcconfig"; sourceTree = "<group>"; };
 		4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4741C6FF8721E9716201BCC9 /* Pods-DeskemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoUITests/Pods-DeskemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A387800A3BC1D6C8DE7650F1 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Pods/Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
+		B171F6950428A9C85B54467C /* Pods-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DomainTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C95C9AC810007641F252E7B2 /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		D43F0672B2EED27733ADFB24 /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2EA16221EDF9AA00112168 /* Deskemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2EA16521EDF9AA00112168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +113,17 @@
 		EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskemoUITests.swift; sourceTree = "<group>"; };
 		EB2EA18A21EDF9AB00112168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE2943E21EE18520089B88B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE2944021EE18520089B88B /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		EBE2944121EE18520089B88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE2944621EE18520089B88B /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE2944D21EE18520089B88B /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		EBE2944F21EE18520089B88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE2945D21EE18BC0089B88B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EBE2945F21EE1DBB0089B88B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EBE2946221EE21680089B88B /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		EBE2946421EE23320089B88B /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		EBE2946621EE23860089B88B /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE2945321EE18520089B88B /* Domain.framework in Frameworks */,
 				4D3C58954E034FAFEEF5EFE3 /* Pods_Deskemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +153,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE2943B21EE18520089B88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C4B22DBFF6C64C0EAF35593 /* Pods_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE2944321EE18520089B88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE2944721EE18520089B88B /* Domain.framework in Frameworks */,
+				E476878A18F7F37E74C305E8 /* Pods_DomainTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,6 +179,8 @@
 				4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */,
 				332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */,
 				2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */,
+				D43F0672B2EED27733ADFB24 /* Pods_Domain.framework */,
+				395415ED599E7CD511D5FACD /* Pods_DomainTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +194,10 @@
 				11DE27A816B070AB9700CE35 /* Pods-DeskemoTests.release.xcconfig */,
 				4741C6FF8721E9716201BCC9 /* Pods-DeskemoUITests.debug.xcconfig */,
 				01A1AB3906E337DA10E8A143 /* Pods-DeskemoUITests.release.xcconfig */,
+				C95C9AC810007641F252E7B2 /* Pods-Domain.debug.xcconfig */,
+				A387800A3BC1D6C8DE7650F1 /* Pods-Domain.release.xcconfig */,
+				B171F6950428A9C85B54467C /* Pods-DomainTests.debug.xcconfig */,
+				3F63C188805BA6BA11FD1DE1 /* Pods-DomainTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -120,6 +208,8 @@
 				EB2EA16421EDF9AA00112168 /* Deskemo */,
 				EB2EA17C21EDF9AB00112168 /* DeskemoTests */,
 				EB2EA18721EDF9AB00112168 /* DeskemoUITests */,
+				EBE2943F21EE18520089B88B /* Domain */,
+				EBE2944C21EE18520089B88B /* DomainTests */,
 				EB2EA16321EDF9AA00112168 /* Products */,
 				B46491E77760F62FCF31AF91 /* Pods */,
 				445C0F1BECFCEDD5CD8DCF4E /* Frameworks */,
@@ -132,6 +222,8 @@
 				EB2EA16221EDF9AA00112168 /* Deskemo.app */,
 				EB2EA17921EDF9AB00112168 /* DeskemoTests.xctest */,
 				EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */,
+				EBE2943E21EE18520089B88B /* Domain.framework */,
+				EBE2944621EE18520089B88B /* DomainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,7 +260,57 @@
 			path = DeskemoUITests;
 			sourceTree = "<group>";
 		};
+		EBE2943F21EE18520089B88B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2946121EE21520089B88B /* UseCases */,
+				EBE2945C21EE18660089B88B /* Entries */,
+				EBE2944021EE18520089B88B /* Domain.h */,
+				EBE2944121EE18520089B88B /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EBE2944C21EE18520089B88B /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2944D21EE18520089B88B /* DomainTests.swift */,
+				EBE2944F21EE18520089B88B /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		EBE2945C21EE18660089B88B /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2945D21EE18BC0089B88B /* Post.swift */,
+				EBE2945F21EE1DBB0089B88B /* User.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		EBE2946121EE21520089B88B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2946221EE21680089B88B /* PostsUseCase.swift */,
+				EBE2946421EE23320089B88B /* UserUseCase.swift */,
+				EBE2946621EE23860089B88B /* UseCaseProvider.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EBE2943921EE18520089B88B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE2945021EE18520089B88B /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EB2EA16121EDF9AA00112168 /* Deskemo */ = {
@@ -179,10 +321,13 @@
 				EB2EA15E21EDF9AA00112168 /* Sources */,
 				EB2EA15F21EDF9AA00112168 /* Frameworks */,
 				EB2EA16021EDF9AA00112168 /* Resources */,
+				EBE2945A21EE18520089B88B /* Embed Frameworks */,
+				CA3FD1BC3F68E43FA92B18C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EBE2945221EE18520089B88B /* PBXTargetDependency */,
 			);
 			name = Deskemo;
 			productName = Deskemo;
@@ -227,6 +372,46 @@
 			productReference = EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EBE2943D21EE18520089B88B /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE2945921EE18520089B88B /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				6A7EAB2D9B05FDBF3353A757 /* [CP] Check Pods Manifest.lock */,
+				EBE2943921EE18520089B88B /* Headers */,
+				EBE2943A21EE18520089B88B /* Sources */,
+				EBE2943B21EE18520089B88B /* Frameworks */,
+				EBE2943C21EE18520089B88B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = EBE2943E21EE18520089B88B /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBE2944521EE18520089B88B /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE2945B21EE18520089B88B /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				2EB99153D62D335399125162 /* [CP] Check Pods Manifest.lock */,
+				EBE2944221EE18520089B88B /* Sources */,
+				EBE2944321EE18520089B88B /* Frameworks */,
+				EBE2944421EE18520089B88B /* Resources */,
+				1F7D688605C2D5E912CE98AE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE2944921EE18520089B88B /* PBXTargetDependency */,
+				EBE2944B21EE18520089B88B /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = EBE2944621EE18520089B88B /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +433,14 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = EB2EA16121EDF9AA00112168;
 					};
+					EBE2943D21EE18520089B88B = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					EBE2944521EE18520089B88B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EB2EA16121EDF9AA00112168;
+					};
 				};
 			};
 			buildConfigurationList = EB2EA15D21EDF9AA00112168 /* Build configuration list for PBXProject "Deskemo" */;
@@ -266,6 +459,8 @@
 				EB2EA16121EDF9AA00112168 /* Deskemo */,
 				EB2EA17821EDF9AB00112168 /* DeskemoTests */,
 				EB2EA18321EDF9AB00112168 /* DeskemoUITests */,
+				EBE2943D21EE18520089B88B /* Domain */,
+				EBE2944521EE18520089B88B /* DomainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,9 +490,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE2943C21EE18520089B88B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE2944421EE18520089B88B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F7D688605C2D5E912CE98AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DomainTests/Pods-DomainTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EB99153D62D335399125162 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DomainTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B1A8D1229F0FDDB6C1CD6EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +563,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DeskemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7EAB2D9B05FDBF3353A757 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Domain-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,6 +623,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CA3FD1BC3F68E43FA92B18C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -381,6 +676,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EBE2943A21EE18520089B88B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE2946521EE23320089B88B /* UserUseCase.swift in Sources */,
+				EBE2946721EE23860089B88B /* UseCaseProvider.swift in Sources */,
+				EBE2946021EE1DBB0089B88B /* User.swift in Sources */,
+				EBE2946321EE21680089B88B /* PostsUseCase.swift in Sources */,
+				EBE2945E21EE18BC0089B88B /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE2944221EE18520089B88B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE2944E21EE18520089B88B /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -393,6 +708,21 @@
 			isa = PBXTargetDependency;
 			target = EB2EA16121EDF9AA00112168 /* Deskemo */;
 			targetProxy = EB2EA18521EDF9AB00112168 /* PBXContainerItemProxy */;
+		};
+		EBE2944921EE18520089B88B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE2943D21EE18520089B88B /* Domain */;
+			targetProxy = EBE2944821EE18520089B88B /* PBXContainerItemProxy */;
+		};
+		EBE2944B21EE18520089B88B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2EA16121EDF9AA00112168 /* Deskemo */;
+			targetProxy = EBE2944A21EE18520089B88B /* PBXContainerItemProxy */;
+		};
+		EBE2945221EE18520089B88B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE2943D21EE18520089B88B /* Domain */;
+			targetProxy = EBE2945121EE18520089B88B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +866,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWZQFWGZMG;
@@ -555,6 +886,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 42BC9D8E51EB6D136BFB7900 /* Pods-Deskemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWZQFWGZMG;
@@ -656,6 +988,109 @@
 			};
 			name = Release;
 		};
+		EBE2945521EE18520089B88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C95C9AC810007641F252E7B2 /* Pods-Domain.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.domain.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBE2945621EE18520089B88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A387800A3BC1D6C8DE7650F1 /* Pods-Domain.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.domain.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBE2945721EE18520089B88B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B171F6950428A9C85B54467C /* Pods-DomainTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.domain.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskemo.app/Deskemo";
+			};
+			name = Debug;
+		};
+		EBE2945821EE18520089B88B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F63C188805BA6BA11FD1DE1 /* Pods-DomainTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.domain.DomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskemo.app/Deskemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -691,6 +1126,24 @@
 			buildConfigurations = (
 				EB2EA19421EDF9AB00112168 /* Debug */,
 				EB2EA19521EDF9AB00112168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE2945921EE18520089B88B /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE2945521EE18520089B88B /* Debug */,
+				EBE2945621EE18520089B88B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE2945B21EE18520089B88B /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE2945721EE18520089B88B /* Debug */,
+				EBE2945821EE18520089B88B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
