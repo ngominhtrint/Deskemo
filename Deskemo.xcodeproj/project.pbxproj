@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01973702E93F0B70C2DBC6AF /* Pods_DeskemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */; };
+		4D3C58954E034FAFEEF5EFE3 /* Pods_Deskemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */; };
+		5A6484935C4AE907D549FB00 /* Pods_DeskemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */; };
+		EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16521EDF9AA00112168 /* AppDelegate.swift */; };
+		EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16721EDF9AA00112168 /* ViewController.swift */; };
+		EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA16921EDF9AA00112168 /* Main.storyboard */; };
+		EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16C21EDF9AA00112168 /* Deskemo.xcdatamodeld */; };
+		EB2EA17021EDF9AB00112168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA16F21EDF9AB00112168 /* Assets.xcassets */; };
+		EB2EA17321EDF9AB00112168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */; };
+		EB2EA17E21EDF9AB00112168 /* DeskemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA17D21EDF9AB00112168 /* DeskemoTests.swift */; };
+		EB2EA18921EDF9AB00112168 /* DeskemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB2EA17A21EDF9AB00112168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2EA15A21EDF9AA00112168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2EA16121EDF9AA00112168;
+			remoteInfo = Deskemo;
+		};
+		EB2EA18521EDF9AB00112168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB2EA15A21EDF9AA00112168 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB2EA16121EDF9AA00112168;
+			remoteInfo = Deskemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A1AB3906E337DA10E8A143 /* Pods-DeskemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoUITests/Pods-DeskemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		11DE27A816B070AB9700CE35 /* Pods-DeskemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeskemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeskemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42BC9D8E51EB6D136BFB7900 /* Pods-Deskemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo.release.xcconfig"; sourceTree = "<group>"; };
+		4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deskemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4741C6FF8721E9716201BCC9 /* Pods-DeskemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoUITests/Pods-DeskemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2EA16221EDF9AA00112168 /* Deskemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2EA16521EDF9AA00112168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB2EA16721EDF9AA00112168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB2EA16A21EDF9AA00112168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB2EA16D21EDF9AA00112168 /* Deskemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Deskemo.xcdatamodel; sourceTree = "<group>"; };
+		EB2EA16F21EDF9AB00112168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB2EA17221EDF9AB00112168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB2EA17421EDF9AB00112168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2EA17921EDF9AB00112168 /* DeskemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2EA17D21EDF9AB00112168 /* DeskemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskemoTests.swift; sourceTree = "<group>"; };
+		EB2EA17F21EDF9AB00112168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskemoUITests.swift; sourceTree = "<group>"; };
+		EB2EA18A21EDF9AB00112168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB2EA15F21EDF9AA00112168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3C58954E034FAFEEF5EFE3 /* Pods_Deskemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA17621EDF9AB00112168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01973702E93F0B70C2DBC6AF /* Pods_DeskemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA18121EDF9AB00112168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A6484935C4AE907D549FB00 /* Pods_DeskemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		445C0F1BECFCEDD5CD8DCF4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4650F59642A1F3262B4EDD90 /* Pods_Deskemo.framework */,
+				332FEEE008994DC13A5C1757 /* Pods_DeskemoTests.framework */,
+				2DEB549B4401650A99A645EA /* Pods_DeskemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B46491E77760F62FCF31AF91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */,
+				42BC9D8E51EB6D136BFB7900 /* Pods-Deskemo.release.xcconfig */,
+				F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */,
+				11DE27A816B070AB9700CE35 /* Pods-DeskemoTests.release.xcconfig */,
+				4741C6FF8721E9716201BCC9 /* Pods-DeskemoUITests.debug.xcconfig */,
+				01A1AB3906E337DA10E8A143 /* Pods-DeskemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB2EA15921EDF9AA00112168 = {
+			isa = PBXGroup;
+			children = (
+				EB2EA16421EDF9AA00112168 /* Deskemo */,
+				EB2EA17C21EDF9AB00112168 /* DeskemoTests */,
+				EB2EA18721EDF9AB00112168 /* DeskemoUITests */,
+				EB2EA16321EDF9AA00112168 /* Products */,
+				B46491E77760F62FCF31AF91 /* Pods */,
+				445C0F1BECFCEDD5CD8DCF4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EB2EA16321EDF9AA00112168 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2EA16221EDF9AA00112168 /* Deskemo.app */,
+				EB2EA17921EDF9AB00112168 /* DeskemoTests.xctest */,
+				EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2EA16421EDF9AA00112168 /* Deskemo */ = {
+			isa = PBXGroup;
+			children = (
+				EB2EA16521EDF9AA00112168 /* AppDelegate.swift */,
+				EB2EA16721EDF9AA00112168 /* ViewController.swift */,
+				EB2EA16921EDF9AA00112168 /* Main.storyboard */,
+				EB2EA16F21EDF9AB00112168 /* Assets.xcassets */,
+				EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */,
+				EB2EA17421EDF9AB00112168 /* Info.plist */,
+				EB2EA16C21EDF9AA00112168 /* Deskemo.xcdatamodeld */,
+			);
+			path = Deskemo;
+			sourceTree = "<group>";
+		};
+		EB2EA17C21EDF9AB00112168 /* DeskemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2EA17D21EDF9AB00112168 /* DeskemoTests.swift */,
+				EB2EA17F21EDF9AB00112168 /* Info.plist */,
+			);
+			path = DeskemoTests;
+			sourceTree = "<group>";
+		};
+		EB2EA18721EDF9AB00112168 /* DeskemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */,
+				EB2EA18A21EDF9AB00112168 /* Info.plist */,
+			);
+			path = DeskemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB2EA16121EDF9AA00112168 /* Deskemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2EA18D21EDF9AB00112168 /* Build configuration list for PBXNativeTarget "Deskemo" */;
+			buildPhases = (
+				6C8929558DC3AA75BDB865DE /* [CP] Check Pods Manifest.lock */,
+				EB2EA15E21EDF9AA00112168 /* Sources */,
+				EB2EA15F21EDF9AA00112168 /* Frameworks */,
+				EB2EA16021EDF9AA00112168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deskemo;
+			productName = Deskemo;
+			productReference = EB2EA16221EDF9AA00112168 /* Deskemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB2EA17821EDF9AB00112168 /* DeskemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2EA19021EDF9AB00112168 /* Build configuration list for PBXNativeTarget "DeskemoTests" */;
+			buildPhases = (
+				BAC88F04215637F867C5F2EE /* [CP] Check Pods Manifest.lock */,
+				EB2EA17521EDF9AB00112168 /* Sources */,
+				EB2EA17621EDF9AB00112168 /* Frameworks */,
+				EB2EA17721EDF9AB00112168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2EA17B21EDF9AB00112168 /* PBXTargetDependency */,
+			);
+			name = DeskemoTests;
+			productName = DeskemoTests;
+			productReference = EB2EA17921EDF9AB00112168 /* DeskemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB2EA18321EDF9AB00112168 /* DeskemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2EA19321EDF9AB00112168 /* Build configuration list for PBXNativeTarget "DeskemoUITests" */;
+			buildPhases = (
+				5B1A8D1229F0FDDB6C1CD6EF /* [CP] Check Pods Manifest.lock */,
+				EB2EA18021EDF9AB00112168 /* Sources */,
+				EB2EA18121EDF9AB00112168 /* Frameworks */,
+				EB2EA18221EDF9AB00112168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2EA18621EDF9AB00112168 /* PBXTargetDependency */,
+			);
+			name = DeskemoUITests;
+			productName = DeskemoUITests;
+			productReference = EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB2EA15A21EDF9AA00112168 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = RoverDream;
+				TargetAttributes = {
+					EB2EA16121EDF9AA00112168 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					EB2EA17821EDF9AB00112168 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EB2EA16121EDF9AA00112168;
+					};
+					EB2EA18321EDF9AB00112168 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EB2EA16121EDF9AA00112168;
+					};
+				};
+			};
+			buildConfigurationList = EB2EA15D21EDF9AA00112168 /* Build configuration list for PBXProject "Deskemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB2EA15921EDF9AA00112168;
+			productRefGroup = EB2EA16321EDF9AA00112168 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB2EA16121EDF9AA00112168 /* Deskemo */,
+				EB2EA17821EDF9AB00112168 /* DeskemoTests */,
+				EB2EA18321EDF9AB00112168 /* DeskemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB2EA16021EDF9AA00112168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2EA17321EDF9AB00112168 /* LaunchScreen.storyboard in Resources */,
+				EB2EA17021EDF9AB00112168 /* Assets.xcassets in Resources */,
+				EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA17721EDF9AB00112168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA18221EDF9AB00112168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B1A8D1229F0FDDB6C1CD6EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeskemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C8929558DC3AA75BDB865DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deskemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAC88F04215637F867C5F2EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeskemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB2EA15E21EDF9AA00112168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */,
+				EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */,
+				EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA17521EDF9AB00112168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2EA17E21EDF9AB00112168 /* DeskemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2EA18021EDF9AB00112168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2EA18921EDF9AB00112168 /* DeskemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB2EA17B21EDF9AB00112168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2EA16121EDF9AA00112168 /* Deskemo */;
+			targetProxy = EB2EA17A21EDF9AB00112168 /* PBXContainerItemProxy */;
+		};
+		EB2EA18621EDF9AB00112168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB2EA16121EDF9AA00112168 /* Deskemo */;
+			targetProxy = EB2EA18521EDF9AB00112168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB2EA16921EDF9AA00112168 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2EA16A21EDF9AA00112168 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2EA17221EDF9AB00112168 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB2EA18B21EDF9AB00112168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB2EA18C21EDF9AB00112168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB2EA18E21EDF9AB00112168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = Deskemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB2EA18F21EDF9AB00112168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BC9D8E51EB6D136BFB7900 /* Pods-Deskemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = Deskemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB2EA19121EDF9AB00112168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DeskemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.DeskemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskemo.app/Deskemo";
+			};
+			name = Debug;
+		};
+		EB2EA19221EDF9AB00112168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11DE27A816B070AB9700CE35 /* Pods-DeskemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DeskemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.DeskemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deskemo.app/Deskemo";
+			};
+			name = Release;
+		};
+		EB2EA19421EDF9AB00112168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4741C6FF8721E9716201BCC9 /* Pods-DeskemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DeskemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.DeskemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deskemo;
+			};
+			name = Debug;
+		};
+		EB2EA19521EDF9AB00112168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A1AB3906E337DA10E8A143 /* Pods-DeskemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWZQFWGZMG;
+				INFOPLIST_FILE = DeskemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.deskemo.DeskemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Deskemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB2EA15D21EDF9AA00112168 /* Build configuration list for PBXProject "Deskemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2EA18B21EDF9AB00112168 /* Debug */,
+				EB2EA18C21EDF9AB00112168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2EA18D21EDF9AB00112168 /* Build configuration list for PBXNativeTarget "Deskemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2EA18E21EDF9AB00112168 /* Debug */,
+				EB2EA18F21EDF9AB00112168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2EA19021EDF9AB00112168 /* Build configuration list for PBXNativeTarget "DeskemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2EA19121EDF9AB00112168 /* Debug */,
+				EB2EA19221EDF9AB00112168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2EA19321EDF9AB00112168 /* Build configuration list for PBXNativeTarget "DeskemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2EA19421EDF9AB00112168 /* Debug */,
+				EB2EA19521EDF9AB00112168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB2EA16C21EDF9AA00112168 /* Deskemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB2EA16D21EDF9AA00112168 /* Deskemo.xcdatamodel */,
+			);
+			currentVersion = EB2EA16D21EDF9AA00112168 /* Deskemo.xcdatamodel */;
+			path = Deskemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB2EA15A21EDF9AA00112168 /* Project object */;
+}

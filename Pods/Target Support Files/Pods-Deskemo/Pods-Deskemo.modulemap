@@ -1,0 +1,6 @@
+framework module Pods_Deskemo {
+  umbrella header "Pods-Deskemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
