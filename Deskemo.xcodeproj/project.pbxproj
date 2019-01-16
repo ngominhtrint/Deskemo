@@ -62,7 +62,7 @@
 		EBE294C721EECD190089B88B /* SignUpNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294C621EECD190089B88B /* SignUpNavigator.swift */; };
 		EBE294C921EECD280089B88B /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294C821EECD280089B88B /* LoginNavigator.swift */; };
 		EBE294CB21EECD370089B88B /* FavoritesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294CA21EECD370089B88B /* FavoritesNavigator.swift */; };
-		EBE294CD21EECD5B0089B88B /* ItemsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294CC21EECD5B0089B88B /* ItemsNavigator.swift */; };
+		EBE294CD21EECD5B0089B88B /* PostsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294CC21EECD5B0089B88B /* PostsNavigator.swift */; };
 		EBE294CF21EED33B0089B88B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294CE21EED33B0089B88B /* LoginViewModel.swift */; };
 		EBE294D121EED46D0089B88B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294D021EED46D0089B88B /* LoginViewController.swift */; };
 		EBE294D421EED6EC0089B88B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294D321EED6EC0089B88B /* Reusable.swift */; };
@@ -70,8 +70,21 @@
 		EBE294D821EEDB4B0089B88B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294D721EEDB4B0089B88B /* SignUpViewModel.swift */; };
 		EBE294DA21EF017C0089B88B /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294D921EF017C0089B88B /* MainNavigator.swift */; };
 		EBE294DD21EF040A0089B88B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294DC21EF040A0089B88B /* FavoritesViewController.swift */; };
-		EBE294DF21EF042F0089B88B /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294DE21EF042F0089B88B /* ItemsViewController.swift */; };
+		EBE294DF21EF042F0089B88B /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294DE21EF042F0089B88B /* PostsViewController.swift */; };
 		EBE294E121EF04390089B88B /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E021EF04390089B88B /* UserViewController.swift */; };
+		EBE294E321EF0B210089B88B /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E221EF0B210089B88B /* Observable+Ext.swift */; };
+		EBE294E521EF0B3A0089B88B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */; };
+		EBE294E721EF0B570089B88B /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E621EF0B570089B88B /* ErrorTracker.swift */; };
+		EBE294EB21EF0C500089B88B /* ItemDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */; };
+		EBE294ED21EF0C600089B88B /* FavoriteDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EC21EF0C600089B88B /* FavoriteDetailNavigator.swift */; };
+		EBE294EF21EF0D3A0089B88B /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */; };
+		EBE294F121EF0D4B0089B88B /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */; };
+		EBE294F321EF0E240089B88B /* FavoriteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F221EF0E240089B88B /* FavoriteDetailViewModel.swift */; };
+		EBE294F521EF0E510089B88B /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F421EF0E510089B88B /* FavoriteDetailViewController.swift */; };
+		EBE294F721EF11170089B88B /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F621EF11170089B88B /* PostsViewModel.swift */; };
+		EBE294F921EF13770089B88B /* PostItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F821EF13770089B88B /* PostItemViewModel.swift */; };
+		EBE294FD21EF153B0089B88B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294FB21EF153B0089B88B /* PostCell.swift */; };
+		EBE294FE21EF153B0089B88B /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE294FC21EF153B0089B88B /* PostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,7 +237,7 @@
 		EBE294C621EECD190089B88B /* SignUpNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpNavigator.swift; sourceTree = "<group>"; };
 		EBE294C821EECD280089B88B /* LoginNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
 		EBE294CA21EECD370089B88B /* FavoritesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesNavigator.swift; sourceTree = "<group>"; };
-		EBE294CC21EECD5B0089B88B /* ItemsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsNavigator.swift; sourceTree = "<group>"; };
+		EBE294CC21EECD5B0089B88B /* PostsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsNavigator.swift; sourceTree = "<group>"; };
 		EBE294CE21EED33B0089B88B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EBE294D021EED46D0089B88B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EBE294D321EED6EC0089B88B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
@@ -232,8 +245,21 @@
 		EBE294D721EEDB4B0089B88B /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EBE294D921EF017C0089B88B /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		EBE294DC21EF040A0089B88B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		EBE294DE21EF042F0089B88B /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		EBE294DE21EF042F0089B88B /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		EBE294E021EF04390089B88B /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		EBE294E221EF0B210089B88B /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		EBE294E621EF0B570089B88B /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
+		EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailNavigator.swift; sourceTree = "<group>"; };
+		EBE294EC21EF0C600089B88B /* FavoriteDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailNavigator.swift; sourceTree = "<group>"; };
+		EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		EBE294F221EF0E240089B88B /* FavoriteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewModel.swift; sourceTree = "<group>"; };
+		EBE294F421EF0E510089B88B /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
+		EBE294F621EF11170089B88B /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		EBE294F821EF13770089B88B /* PostItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewModel.swift; sourceTree = "<group>"; };
+		EBE294FB21EF153B0089B88B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		EBE294FC21EF153B0089B88B /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F896D5AB68EC0C0A948EF644 /* Pods-CoreDataPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataPlatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataPlatformTests/Pods-CoreDataPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -558,7 +584,9 @@
 				EBE294C521EECA280089B88B /* SignUp */,
 				EBE294C421EECA220089B88B /* Login */,
 				EBE294C121EEC9EF0089B88B /* Favorites */,
-				EBE294C021EEC9E30089B88B /* Items */,
+				EBE294E921EF0C140089B88B /* FavoriteDetail */,
+				EBE294C021EEC9E30089B88B /* Posts */,
+				EBE294E821EF0C0D0089B88B /* PostDetail */,
 				EBE294BF21EEC9D60089B88B /* User */,
 			);
 			path = Scenes;
@@ -573,13 +601,16 @@
 			path = User;
 			sourceTree = "<group>";
 		};
-		EBE294C021EEC9E30089B88B /* Items */ = {
+		EBE294C021EEC9E30089B88B /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				EBE294CC21EECD5B0089B88B /* ItemsNavigator.swift */,
-				EBE294DE21EF042F0089B88B /* ItemsViewController.swift */,
+				EBE294FA21EF151E0089B88B /* Cell */,
+				EBE294CC21EECD5B0089B88B /* PostsNavigator.swift */,
+				EBE294DE21EF042F0089B88B /* PostsViewController.swift */,
+				EBE294F621EF11170089B88B /* PostsViewModel.swift */,
+				EBE294F821EF13770089B88B /* PostItemViewModel.swift */,
 			);
-			path = Items;
+			path = Posts;
 			sourceTree = "<group>";
 		};
 		EBE294C121EEC9EF0089B88B /* Favorites */ = {
@@ -615,6 +646,9 @@
 			isa = PBXGroup;
 			children = (
 				EBE294D321EED6EC0089B88B /* Reusable.swift */,
+				EBE294E221EF0B210089B88B /* Observable+Ext.swift */,
+				EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */,
+				EBE294E621EF0B570089B88B /* ErrorTracker.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -625,6 +659,35 @@
 				EBE294D921EF017C0089B88B /* MainNavigator.swift */,
 			);
 			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EBE294E821EF0C0D0089B88B /* PostDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */,
+				EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */,
+				EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */,
+			);
+			path = PostDetail;
+			sourceTree = "<group>";
+		};
+		EBE294E921EF0C140089B88B /* FavoriteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EBE294EC21EF0C600089B88B /* FavoriteDetailNavigator.swift */,
+				EBE294F221EF0E240089B88B /* FavoriteDetailViewModel.swift */,
+				EBE294F421EF0E510089B88B /* FavoriteDetailViewController.swift */,
+			);
+			path = FavoriteDetail;
+			sourceTree = "<group>";
+		};
+		EBE294FA21EF151E0089B88B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBE294FB21EF153B0089B88B /* PostCell.swift */,
+				EBE294FC21EF153B0089B88B /* PostCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -859,6 +922,7 @@
 				EB2EA17321EDF9AB00112168 /* LaunchScreen.storyboard in Resources */,
 				EB2EA17021EDF9AB00112168 /* Assets.xcassets in Resources */,
 				EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */,
+				EBE294FE21EF153B0089B88B /* PostCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1122,20 +1186,32 @@
 				EBE294BD21EEB6C50089B88B /* Application.swift in Sources */,
 				EBE294D421EED6EC0089B88B /* Reusable.swift in Sources */,
 				EBE294BB21EEB6B00089B88B /* ViewModelType.swift in Sources */,
+				EBE294E521EF0B3A0089B88B /* ActivityIndicator.swift in Sources */,
+				EBE294E721EF0B570089B88B /* ErrorTracker.swift in Sources */,
+				EBE294E321EF0B210089B88B /* Observable+Ext.swift in Sources */,
 				EBE294CF21EED33B0089B88B /* LoginViewModel.swift in Sources */,
 				EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */,
 				EBE294C921EECD280089B88B /* LoginNavigator.swift in Sources */,
+				EBE294F121EF0D4B0089B88B /* ItemDetailViewController.swift in Sources */,
+				EBE294F321EF0E240089B88B /* FavoriteDetailViewModel.swift in Sources */,
 				EBE294D821EEDB4B0089B88B /* SignUpViewModel.swift in Sources */,
 				EBE294DD21EF040A0089B88B /* FavoritesViewController.swift in Sources */,
 				EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */,
+				EBE294F521EF0E510089B88B /* FavoriteDetailViewController.swift in Sources */,
+				EBE294FD21EF153B0089B88B /* PostCell.swift in Sources */,
 				EBE294D621EEDAD10089B88B /* SignUpViewController.swift in Sources */,
 				EBE294C721EECD190089B88B /* SignUpNavigator.swift in Sources */,
+				EBE294EB21EF0C500089B88B /* ItemDetailNavigator.swift in Sources */,
+				EBE294F721EF11170089B88B /* PostsViewModel.swift in Sources */,
+				EBE294EF21EF0D3A0089B88B /* ItemDetailViewModel.swift in Sources */,
 				EBE294CB21EECD370089B88B /* FavoritesNavigator.swift in Sources */,
-				EBE294DF21EF042F0089B88B /* ItemsViewController.swift in Sources */,
+				EBE294DF21EF042F0089B88B /* PostsViewController.swift in Sources */,
 				EBE294C321EECA0F0089B88B /* UserNavigator.swift in Sources */,
-				EBE294CD21EECD5B0089B88B /* ItemsNavigator.swift in Sources */,
+				EBE294CD21EECD5B0089B88B /* PostsNavigator.swift in Sources */,
+				EBE294F921EF13770089B88B /* PostItemViewModel.swift in Sources */,
 				EBE294DA21EF017C0089B88B /* MainNavigator.swift in Sources */,
 				EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */,
+				EBE294ED21EF0C600089B88B /* FavoriteDetailNavigator.swift in Sources */,
 				EBE294E121EF04390089B88B /* UserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

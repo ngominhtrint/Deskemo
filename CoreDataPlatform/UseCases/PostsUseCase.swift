@@ -29,4 +29,8 @@ final class PostsUseCase<Repository>: Domain.PostsUseCase where Repository: Abst
     func delete(post: Post) -> Observable<Void> {
         return repository.delete(entity: post)
     }
+    
+    func deleteAll() -> Observable<Void> {
+        return repository.deleteAll(sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
+    }
 }

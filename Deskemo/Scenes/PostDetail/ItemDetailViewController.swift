@@ -1,5 +1,5 @@
 //
-//  ItemsViewController.swift
+//  ItemDetailViewController.swift
 //  Deskemo
 //
 //  Created by TriNgo on 1/16/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemsViewController: UIViewController {
+class ItemDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
