@@ -13,4 +13,5 @@ public protocol UserUseCase {
     
     func create(user: User) -> Observable<Void>
     func update(user: User) -> Observable<Void>
+    func user(username: String) -> Observable<[User]>
 }

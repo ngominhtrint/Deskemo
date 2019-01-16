@@ -25,4 +25,10 @@ final class UserUseCase<Repository>: Domain.UserUseCase where Repository: Abstra
     func update(user: User) -> Observable<Void> {
         return repository.save(entity: user)
     }
+    
+    func user(username: String) -> Observable<[User]> {
+        return repository.query(with: NSPredicate(format: "username = %@", username),
+                                sortDescriptors: [User.CoreDataType.uid.descending()])
+            .filter { $0.count > 0}
+    }
 }

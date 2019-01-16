@@ -34,7 +34,7 @@ public struct Post: Codable {
     }
     
     public init(body: String, title: String, imageUrl: String) {
-        self.init(body: body, title: title, uid: NSUUID().uuidString, userId: "5", updatedAt: String(round(Date().timeIntervalSince1970 * 1000)), imageUrl: imageUrl, isFavorite: false)
+        self.init(body: body, title: title, uid: NSUUID().uuidString, userId: "5", updatedAt: String(round(Date().timeIntervalSince1970 * 1000)), imageUrl: imageUrl, isFavorite: true)
     }
     
     private enum CodingKeys: String, CodingKey {

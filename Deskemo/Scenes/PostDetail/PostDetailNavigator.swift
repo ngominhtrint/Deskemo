@@ -1,5 +1,5 @@
 //
-//  ItemDetailNavigator.swift
+//  PostDetailNavigator.swift
 //  Deskemo
 //
 //  Created by TriNgo on 1/16/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ItemDetailNavigator {
+protocol PostDetailNavigator {
     
     func toItems()
 }
 
-class DefaultItemDetailNavigator: ItemDetailNavigator {
+class DefaultPostDetailNavigator: PostDetailNavigator {
     
     private let navigationController: UINavigationController
     

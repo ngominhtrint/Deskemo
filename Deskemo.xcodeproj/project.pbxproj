@@ -15,7 +15,6 @@
 		E476878A18F7F37E74C305E8 /* Pods_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395415ED599E7CD511D5FACD /* Pods_DomainTests.framework */; };
 		E819DDBAE0A75B1D3EC3236A /* Pods_CoreDataPlatformTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9009A541AFA9EA82ACA28B /* Pods_CoreDataPlatformTests.framework */; };
 		EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16521EDF9AA00112168 /* AppDelegate.swift */; };
-		EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16721EDF9AA00112168 /* ViewController.swift */; };
 		EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA16921EDF9AA00112168 /* Main.storyboard */; };
 		EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA16C21EDF9AA00112168 /* Deskemo.xcdatamodeld */; };
 		EB2EA17021EDF9AB00112168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA16F21EDF9AB00112168 /* Assets.xcassets */; };
@@ -75,16 +74,22 @@
 		EBE294E321EF0B210089B88B /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E221EF0B210089B88B /* Observable+Ext.swift */; };
 		EBE294E521EF0B3A0089B88B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */; };
 		EBE294E721EF0B570089B88B /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294E621EF0B570089B88B /* ErrorTracker.swift */; };
-		EBE294EB21EF0C500089B88B /* ItemDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */; };
+		EBE294EB21EF0C500089B88B /* PostDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EA21EF0C500089B88B /* PostDetailNavigator.swift */; };
 		EBE294ED21EF0C600089B88B /* FavoriteDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EC21EF0C600089B88B /* FavoriteDetailNavigator.swift */; };
-		EBE294EF21EF0D3A0089B88B /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */; };
-		EBE294F121EF0D4B0089B88B /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */; };
+		EBE294EF21EF0D3A0089B88B /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294EE21EF0D3A0089B88B /* PostDetailViewModel.swift */; };
+		EBE294F121EF0D4B0089B88B /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F021EF0D4B0089B88B /* PostDetailViewController.swift */; };
 		EBE294F321EF0E240089B88B /* FavoriteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F221EF0E240089B88B /* FavoriteDetailViewModel.swift */; };
 		EBE294F521EF0E510089B88B /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F421EF0E510089B88B /* FavoriteDetailViewController.swift */; };
 		EBE294F721EF11170089B88B /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F621EF11170089B88B /* PostsViewModel.swift */; };
 		EBE294F921EF13770089B88B /* PostItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294F821EF13770089B88B /* PostItemViewModel.swift */; };
 		EBE294FD21EF153B0089B88B /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294FB21EF153B0089B88B /* PostCell.swift */; };
 		EBE294FE21EF153B0089B88B /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE294FC21EF153B0089B88B /* PostCell.xib */; };
+		EBE2950021EF41660089B88B /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE294FF21EF41660089B88B /* FavoritesViewModel.swift */; };
+		EBE2950221EF419B0089B88B /* FavoriteItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2950121EF419B0089B88B /* FavoriteItemViewModel.swift */; };
+		EBE2950621EF76800089B88B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2950421EF76800089B88B /* UserCell.swift */; };
+		EBE2950721EF76800089B88B /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE2950521EF76800089B88B /* UserCell.xib */; };
+		EBE2950A21EF76990089B88B /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2950821EF76990089B88B /* FavoriteCell.swift */; };
+		EBE2950B21EF76990089B88B /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE2950921EF76990089B88B /* FavoriteCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,7 +188,6 @@
 		D50BEEF9F207B6B29CD00FD0 /* Pods-Deskemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deskemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EB2EA16221EDF9AA00112168 /* Deskemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deskemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2EA16521EDF9AA00112168 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB2EA16721EDF9AA00112168 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2EA16A21EDF9AA00112168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB2EA16D21EDF9AA00112168 /* Deskemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Deskemo.xcdatamodel; sourceTree = "<group>"; };
 		EB2EA16F21EDF9AB00112168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -250,16 +254,22 @@
 		EBE294E221EF0B210089B88B /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
 		EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		EBE294E621EF0B570089B88B /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
-		EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailNavigator.swift; sourceTree = "<group>"; };
+		EBE294EA21EF0C500089B88B /* PostDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailNavigator.swift; sourceTree = "<group>"; };
 		EBE294EC21EF0C600089B88B /* FavoriteDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailNavigator.swift; sourceTree = "<group>"; };
-		EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
-		EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		EBE294EE21EF0D3A0089B88B /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		EBE294F021EF0D4B0089B88B /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		EBE294F221EF0E240089B88B /* FavoriteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewModel.swift; sourceTree = "<group>"; };
 		EBE294F421EF0E510089B88B /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		EBE294F621EF11170089B88B /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		EBE294F821EF13770089B88B /* PostItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemViewModel.swift; sourceTree = "<group>"; };
 		EBE294FB21EF153B0089B88B /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		EBE294FC21EF153B0089B88B /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		EBE294FF21EF41660089B88B /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		EBE2950121EF419B0089B88B /* FavoriteItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemViewModel.swift; sourceTree = "<group>"; };
+		EBE2950421EF76800089B88B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EBE2950521EF76800089B88B /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		EBE2950821EF76990089B88B /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		EBE2950921EF76990089B88B /* FavoriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
 		F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F896D5AB68EC0C0A948EF644 /* Pods-CoreDataPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataPlatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataPlatformTests/Pods-CoreDataPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -401,7 +411,6 @@
 				EBE294BE21EEC8E50089B88B /* Scenes */,
 				EBE294D221EED6D50089B88B /* Utility */,
 				EB2EA16521EDF9AA00112168 /* AppDelegate.swift */,
-				EB2EA16721EDF9AA00112168 /* ViewController.swift */,
 				EB2EA16921EDF9AA00112168 /* Main.storyboard */,
 				EB2EA16F21EDF9AB00112168 /* Assets.xcassets */,
 				EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */,
@@ -616,8 +625,11 @@
 		EBE294C121EEC9EF0089B88B /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				EBE2950321EF766E0089B88B /* Cell */,
 				EBE294CA21EECD370089B88B /* FavoritesNavigator.swift */,
 				EBE294DC21EF040A0089B88B /* FavoritesViewController.swift */,
+				EBE294FF21EF41660089B88B /* FavoritesViewModel.swift */,
+				EBE2950121EF419B0089B88B /* FavoriteItemViewModel.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -664,9 +676,9 @@
 		EBE294E821EF0C0D0089B88B /* PostDetail */ = {
 			isa = PBXGroup;
 			children = (
-				EBE294EA21EF0C500089B88B /* ItemDetailNavigator.swift */,
-				EBE294EE21EF0D3A0089B88B /* ItemDetailViewModel.swift */,
-				EBE294F021EF0D4B0089B88B /* ItemDetailViewController.swift */,
+				EBE294EA21EF0C500089B88B /* PostDetailNavigator.swift */,
+				EBE294EE21EF0D3A0089B88B /* PostDetailViewModel.swift */,
+				EBE294F021EF0D4B0089B88B /* PostDetailViewController.swift */,
 			);
 			path = PostDetail;
 			sourceTree = "<group>";
@@ -686,6 +698,17 @@
 			children = (
 				EBE294FB21EF153B0089B88B /* PostCell.swift */,
 				EBE294FC21EF153B0089B88B /* PostCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EBE2950321EF766E0089B88B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2950421EF76800089B88B /* UserCell.swift */,
+				EBE2950521EF76800089B88B /* UserCell.xib */,
+				EBE2950821EF76990089B88B /* FavoriteCell.swift */,
+				EBE2950921EF76990089B88B /* FavoriteCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -923,6 +946,8 @@
 				EB2EA17021EDF9AB00112168 /* Assets.xcassets in Resources */,
 				EB2EA16B21EDF9AA00112168 /* Main.storyboard in Resources */,
 				EBE294FE21EF153B0089B88B /* PostCell.xib in Resources */,
+				EBE2950721EF76800089B88B /* UserCell.xib in Resources */,
+				EBE2950B21EF76990089B88B /* FavoriteCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1140,16 +1165,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1190,20 +1219,22 @@
 				EBE294E721EF0B570089B88B /* ErrorTracker.swift in Sources */,
 				EBE294E321EF0B210089B88B /* Observable+Ext.swift in Sources */,
 				EBE294CF21EED33B0089B88B /* LoginViewModel.swift in Sources */,
-				EB2EA16821EDF9AA00112168 /* ViewController.swift in Sources */,
 				EBE294C921EECD280089B88B /* LoginNavigator.swift in Sources */,
-				EBE294F121EF0D4B0089B88B /* ItemDetailViewController.swift in Sources */,
+				EBE294F121EF0D4B0089B88B /* PostDetailViewController.swift in Sources */,
 				EBE294F321EF0E240089B88B /* FavoriteDetailViewModel.swift in Sources */,
 				EBE294D821EEDB4B0089B88B /* SignUpViewModel.swift in Sources */,
 				EBE294DD21EF040A0089B88B /* FavoritesViewController.swift in Sources */,
 				EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */,
 				EBE294F521EF0E510089B88B /* FavoriteDetailViewController.swift in Sources */,
 				EBE294FD21EF153B0089B88B /* PostCell.swift in Sources */,
+				EBE2950021EF41660089B88B /* FavoritesViewModel.swift in Sources */,
+				EBE2950221EF419B0089B88B /* FavoriteItemViewModel.swift in Sources */,
 				EBE294D621EEDAD10089B88B /* SignUpViewController.swift in Sources */,
 				EBE294C721EECD190089B88B /* SignUpNavigator.swift in Sources */,
-				EBE294EB21EF0C500089B88B /* ItemDetailNavigator.swift in Sources */,
+				EBE2950621EF76800089B88B /* UserCell.swift in Sources */,
+				EBE294EB21EF0C500089B88B /* PostDetailNavigator.swift in Sources */,
 				EBE294F721EF11170089B88B /* PostsViewModel.swift in Sources */,
-				EBE294EF21EF0D3A0089B88B /* ItemDetailViewModel.swift in Sources */,
+				EBE294EF21EF0D3A0089B88B /* PostDetailViewModel.swift in Sources */,
 				EBE294CB21EECD370089B88B /* FavoritesNavigator.swift in Sources */,
 				EBE294DF21EF042F0089B88B /* PostsViewController.swift in Sources */,
 				EBE294C321EECA0F0089B88B /* UserNavigator.swift in Sources */,
@@ -1213,6 +1244,7 @@
 				EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */,
 				EBE294ED21EF0C600089B88B /* FavoriteDetailNavigator.swift in Sources */,
 				EBE294E121EF04390089B88B /* UserViewController.swift in Sources */,
+				EBE2950A21EF76990089B88B /* FavoriteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

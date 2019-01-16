@@ -22,6 +22,11 @@ final class PostsUseCase<Repository>: Domain.PostsUseCase where Repository: Abst
         return repository.query(with: nil, sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
     }
     
+    func favoritePosts() -> Observable<[Post]> {
+        return repository.query(with: NSPredicate(format: "isFavorite = %@", NSNumber(value: true)),
+                                sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
+    }
+    
     func save(post: Post) -> Observable<Void> {
         return repository.save(entity: post)
     }

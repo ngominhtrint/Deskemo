@@ -29,6 +29,8 @@ class PostsViewController: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.estimatedRowHeight = 64
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.keyboardDismissMode = .interactive
+        tableView.tableFooterView = UIView()
     }
     
     private func bindViewModel() {
@@ -44,14 +46,11 @@ class PostsViewController: UIViewController {
                                          selection: tableView.rx.itemSelected.asDriver())
         let output = viewModel.transform(input: input)
         
-        // Bind Posts to UITableView
         output.posts.drive(tableView.rx.items(cellIdentifier: PostCell.reuseID, cellType: PostCell.self)) { tv, viewModel, cell in
-//            cell.bind(viewModel)
-            print("\(viewModel)")
+            cell.bind(viewModel)
         }
         .disposed(by: disposeBag)
         
-        // Connect create post to UI
         output.fetching
             .drive(tableView.refreshControl!.rx.isRefreshing)
             .disposed(by: disposeBag)

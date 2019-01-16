@@ -22,6 +22,7 @@ target 'Deskemo' do
   # Pods for Deskemo
   rx_cocoa
   rx_swift
+  pod 'RxDataSources'
   pod 'QueryKit'
 
   target 'DeskemoTests' do

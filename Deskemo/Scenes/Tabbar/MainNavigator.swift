@@ -52,7 +52,8 @@ class DefaultMainNavigator: MainNavigator {
                                                                 image: UIImage(named: "ic_star"),
                                                                 selectedImage: nil)
         let favoritesNavigator = DefaultFavoritesNavigator(storyboard: storyboard,
-                                                           navigationController: favoritesNavigationController)
+                                                           navigationController: favoritesNavigationController,
+                                                           services: coreDataUseCaseProvider)
         
         // Initiate tab bar controller
         let tabBarController = UITabBarController()

@@ -11,14 +11,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="KGk-i7-Jjw" customClass="PostCell" customModule="Deskemo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="172" id="KGk-i7-Jjw" customClass="PostCell" customModule="Deskemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qYD-dX-aRO">
+                        <rect key="frame" x="8" y="21" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="e7y-PX-7Ys"/>
+                            <constraint firstAttribute="width" constant="88" id="o9S-MV-Q5m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-XK-0OW">
+                        <rect key="frame" x="104" y="21" width="247" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-wV-TNo">
+                        <rect key="frame" x="104" y="88.5" width="247" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kV1-XK-0OW" firstAttribute="top" secondItem="qYD-dX-aRO" secondAttribute="top" id="4Sw-bE-5Su"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ajf-wV-TNo" secondAttribute="bottom" constant="10" id="5SM-1n-0wB"/>
+                    <constraint firstItem="qYD-dX-aRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9DM-YF-MiD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kV1-XK-0OW" secondAttribute="trailing" constant="8" id="P1Y-dO-Pd6"/>
+                    <constraint firstItem="kV1-XK-0OW" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="WMg-q0-wbj"/>
+                    <constraint firstItem="ajf-wV-TNo" firstAttribute="bottom" secondItem="qYD-dX-aRO" secondAttribute="bottom" id="a26-Rc-cTY"/>
+                    <constraint firstItem="ajf-wV-TNo" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="cJu-ME-L3k"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ajf-wV-TNo" secondAttribute="trailing" constant="8" id="i22-wq-Gr8"/>
+                    <constraint firstItem="qYD-dX-aRO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="niX-nW-ZtP"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbBody" destination="ajf-wV-TNo" id="I4M-by-FGh"/>
+                <outlet property="lbTitle" destination="kV1-XK-0OW" id="PVZ-Vm-dsd"/>
+            </connections>
+            <point key="canvasLocation" x="-412" y="83"/>
         </tableViewCell>
     </objects>
 </document>

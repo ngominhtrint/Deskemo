@@ -37,6 +37,11 @@ extension ObservableType {
         }
     }
     
+    func handleErrorContinue(_ errorTracker: ErrorTracker) -> Observable<E> {
+        return trackError(errorTracker)
+            .catchErrorJustComplete()
+    }
+    
     func mapToVoid() -> Observable<Void> {
         return map { _ in }
     }
