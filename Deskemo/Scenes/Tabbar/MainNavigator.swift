@@ -35,7 +35,8 @@ class DefaultMainNavigator: MainNavigator {
                                                            image: UIImage(named: "ic_user"),
                                                            selectedImage: nil)
         let userNavigator = DefaultUserNavigator(storyboard: storyboard,
-                                                 navigationController: userNavigationController)
+                                                 navigationController: userNavigationController,
+                                                 services: coreDataUseCaseProvider)
         
         // Items Navigation
         let itemsNavigationController = UINavigationController()

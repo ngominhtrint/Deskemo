@@ -32,28 +32,39 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-wV-TNo">
-                        <rect key="frame" x="104" y="88.5" width="247" height="20.5"/>
+                        <rect key="frame" x="104" y="50" width="247" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSh-eZ-bSM">
+                        <rect key="frame" x="104" y="78.5" width="247" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="kV1-XK-0OW" firstAttribute="top" secondItem="qYD-dX-aRO" secondAttribute="top" id="4Sw-bE-5Su"/>
-                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ajf-wV-TNo" secondAttribute="bottom" constant="10" id="5SM-1n-0wB"/>
                     <constraint firstItem="qYD-dX-aRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9DM-YF-MiD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aSh-eZ-bSM" secondAttribute="trailing" constant="8" id="Ogn-Ae-tGD"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kV1-XK-0OW" secondAttribute="trailing" constant="8" id="P1Y-dO-Pd6"/>
                     <constraint firstItem="kV1-XK-0OW" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="WMg-q0-wbj"/>
-                    <constraint firstItem="ajf-wV-TNo" firstAttribute="bottom" secondItem="qYD-dX-aRO" secondAttribute="bottom" id="a26-Rc-cTY"/>
+                    <constraint firstItem="ajf-wV-TNo" firstAttribute="top" secondItem="kV1-XK-0OW" secondAttribute="bottom" constant="8" id="ZIc-dZ-R3n"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="aSh-eZ-bSM" secondAttribute="bottom" constant="13" id="bDs-Ct-rjT"/>
                     <constraint firstItem="ajf-wV-TNo" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="cJu-ME-L3k"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ajf-wV-TNo" secondAttribute="trailing" constant="8" id="i22-wq-Gr8"/>
+                    <constraint firstItem="aSh-eZ-bSM" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="iip-lF-LYe"/>
+                    <constraint firstItem="aSh-eZ-bSM" firstAttribute="top" secondItem="ajf-wV-TNo" secondAttribute="bottom" constant="8" id="lKu-cL-Ssk"/>
                     <constraint firstItem="qYD-dX-aRO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="niX-nW-ZtP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="ivCover" destination="qYD-dX-aRO" id="uxm-SL-XlP"/>
                 <outlet property="lbBody" destination="ajf-wV-TNo" id="I4M-by-FGh"/>
                 <outlet property="lbTitle" destination="kV1-XK-0OW" id="PVZ-Vm-dsd"/>
+                <outlet property="lbUpdatedAt" destination="aSh-eZ-bSM" id="TuK-qE-m4g"/>
             </connections>
             <point key="canvasLocation" x="-412" y="83"/>
         </tableViewCell>

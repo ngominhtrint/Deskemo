@@ -9,6 +9,10 @@ def rx_cocoa
     pod 'RxCocoa', '~> 4.0'
 end
 
+def alamofire_pod
+    pod 'AlamofireImage'
+end
+
 def test_pods
     pod 'RxTest'
     pod 'RxBlocking'
@@ -22,6 +26,7 @@ target 'Deskemo' do
   # Pods for Deskemo
   rx_cocoa
   rx_swift
+  alamofire_pod
   pod 'RxDataSources'
   pod 'QueryKit'
 

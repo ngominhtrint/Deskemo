@@ -90,6 +90,7 @@
 		EBE2950721EF76800089B88B /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE2950521EF76800089B88B /* UserCell.xib */; };
 		EBE2950A21EF76990089B88B /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2950821EF76990089B88B /* FavoriteCell.swift */; };
 		EBE2950B21EF76990089B88B /* FavoriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE2950921EF76990089B88B /* FavoriteCell.xib */; };
+		EBE2950D21EF8AC20089B88B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2950C21EF8AC20089B88B /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -270,6 +271,7 @@
 		EBE2950521EF76800089B88B /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		EBE2950821EF76990089B88B /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		EBE2950921EF76990089B88B /* FavoriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCell.xib; sourceTree = "<group>"; };
+		EBE2950C21EF8AC20089B88B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F1285EA88620502DF49EFC88 /* Pods-DeskemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeskemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeskemoTests/Pods-DeskemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F896D5AB68EC0C0A948EF644 /* Pods-CoreDataPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataPlatformTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreDataPlatformTests/Pods-CoreDataPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -606,6 +608,7 @@
 			children = (
 				EBE294C221EECA0F0089B88B /* UserNavigator.swift */,
 				EBE294E021EF04390089B88B /* UserViewController.swift */,
+				EBE2950C21EF8AC20089B88B /* UserViewModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -1165,6 +1168,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Deskemo/Pods-Deskemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
@@ -1174,6 +1179,8 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
@@ -1244,6 +1251,7 @@
 				EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */,
 				EBE294ED21EF0C600089B88B /* FavoriteDetailNavigator.swift in Sources */,
 				EBE294E121EF04390089B88B /* UserViewController.swift in Sources */,
+				EBE2950D21EF8AC20089B88B /* UserViewModel.swift in Sources */,
 				EBE2950A21EF76990089B88B /* FavoriteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

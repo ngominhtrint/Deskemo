@@ -94,6 +94,6 @@ extension FavoritesViewModel {
 extension FavoritesViewModel {
     
     private func preloadPostsData() -> User {
-        return User(uid: "1", username: "rover", avatar: "", bio: "This is sample bio.")
+        return User(uid: "1", username: "rover", avatar: "https://i.imgur.com/3UIj6MW.png", bio: "Einstein always excelled at math and physics from a young age, reaching a mathematical level years ahead of his peers. The twelve year old Einstein taught himself algebra and Euclidean geometry over a single summer. Einstein also independently discovered his own original proof of the Pythagorean theorem at age 12.")
     }
 }

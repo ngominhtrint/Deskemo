@@ -7,24 +7,54 @@
 //
 
 import UIKit
+import Domain
+import RxSwift
+import RxCocoa
+import AlamofireImage
 
 class UserViewController: UIViewController {
 
+    @IBOutlet weak var ivAvatar: UIImageView!
+    @IBOutlet weak var lbUsername: UILabel!
+    @IBOutlet weak var lbBio: UILabel!
+    
+    private let disposeBag = DisposeBag()
+    var viewModel: UserViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupView()
+        bindViewModel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupView() {
+        ivAvatar.layer.cornerRadius = ivAvatar.bounds.height / 2
+        ivAvatar.clipsToBounds = true
     }
-    */
-
+    
+    private func bindViewModel() {
+        assert(viewModel != nil)
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+        
+        let input = UserViewModel.Input.init(trigger: viewWillAppear)
+    
+        let output = viewModel.transform(input: input)
+        
+        bindUser(user: output.user)
+    }
+    
+    private func bindUser(user: Driver<User>) {
+        user.drive(onNext: { [weak self] user in
+            guard let strongSelf = self else { return }
+            if let url = URL(string: user.avatar) {
+                strongSelf.ivAvatar.af_setImage(withURL: url)
+            }
+            strongSelf.lbUsername.text = user.username
+            strongSelf.lbBio.text = user.bio
+        })
+        .disposed(by: disposeBag)
+    }
 }
