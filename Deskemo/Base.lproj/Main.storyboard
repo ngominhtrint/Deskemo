@@ -389,7 +389,7 @@
                                                     <constraint firstAttribute="height" constant="240" id="cp0-MC-Aaz"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csp-RR-Kro">
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csp-RR-Kro">
                                                 <rect key="frame" x="16" y="288" width="343" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="1he-57-vYU"/>
@@ -398,7 +398,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BYG-Yt-t0k">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BYG-Yt-t0k">
                                                 <rect key="frame" x="16" y="348" width="343" height="128"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -408,15 +408,32 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8N-wl-JSI">
+                                                <rect key="frame" x="16" y="587" width="343" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Wwn-V9-Try"/>
+                                                </constraints>
+                                                <state key="normal" title="Logout">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onLogoutClicked:" destination="bfw-aK-oFT" eventType="touchUpInside" id="j1Q-6W-gwp"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Q8N-wl-JSI" secondAttribute="trailing" constant="16" id="5Yg-2b-pEb"/>
                                             <constraint firstItem="gh8-eE-3bp" firstAttribute="top" secondItem="vPA-G3-eU4" secondAttribute="top" constant="16" id="7sB-gj-Aex"/>
                                             <constraint firstAttribute="trailing" secondItem="BYG-Yt-t0k" secondAttribute="trailing" constant="16" id="CkJ-Ob-bsB"/>
                                             <constraint firstItem="csp-RR-Kro" firstAttribute="top" secondItem="gh8-eE-3bp" secondAttribute="bottom" constant="32" id="HIO-61-DMe"/>
                                             <constraint firstItem="BYG-Yt-t0k" firstAttribute="leading" secondItem="vPA-G3-eU4" secondAttribute="leading" constant="16" id="OOb-DB-e9L"/>
+                                            <constraint firstAttribute="bottom" secondItem="Q8N-wl-JSI" secondAttribute="bottom" constant="16" id="XN5-D6-EZO"/>
                                             <constraint firstItem="csp-RR-Kro" firstAttribute="leading" secondItem="vPA-G3-eU4" secondAttribute="leading" constant="16" id="XQg-il-drI"/>
                                             <constraint firstAttribute="trailing" secondItem="csp-RR-Kro" secondAttribute="trailing" constant="16" id="g7x-dc-XPM"/>
+                                            <constraint firstItem="Q8N-wl-JSI" firstAttribute="leading" secondItem="vPA-G3-eU4" secondAttribute="leading" constant="16" id="kax-HB-vqG"/>
+                                            <constraint firstItem="Q8N-wl-JSI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BYG-Yt-t0k" secondAttribute="bottom" constant="16" id="m5i-BJ-H80"/>
                                             <constraint firstItem="BYG-Yt-t0k" firstAttribute="top" secondItem="csp-RR-Kro" secondAttribute="bottom" constant="16" id="nFc-44-N5D"/>
                                             <constraint firstItem="gh8-eE-3bp" firstAttribute="centerX" secondItem="vPA-G3-eU4" secondAttribute="centerX" id="vFm-ZV-Vni"/>
                                         </constraints>
@@ -442,6 +459,7 @@
                         <viewLayoutGuide key="safeArea" id="w5U-ts-uAO"/>
                     </view>
                     <connections>
+                        <outlet property="btnLogout" destination="Q8N-wl-JSI" id="cDZ-rY-HsJ"/>
                         <outlet property="ivCover" destination="gh8-eE-3bp" id="hKx-DH-GYI"/>
                         <outlet property="scrollView" destination="jYL-AJ-7pW" id="35L-Wd-lQr"/>
                         <outlet property="tfTitle" destination="csp-RR-Kro" id="GAU-6S-OZx"/>

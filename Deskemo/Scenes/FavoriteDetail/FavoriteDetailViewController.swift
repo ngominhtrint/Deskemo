@@ -18,6 +18,7 @@ class FavoriteDetailViewController: UIViewController {
     @IBOutlet weak var ivCover: UIImageView!
     @IBOutlet weak var tfTitle: UITextField!
     @IBOutlet weak var tvBody: UITextView!
+    @IBOutlet weak var btnLogout: UIButton!
     
     let disposeBag = DisposeBag()
     var loginViewModel: LoginViewModel!
@@ -38,6 +39,12 @@ class FavoriteDetailViewController: UIViewController {
         tvBody.layer.cornerRadius = 6
         tvBody.layer.borderWidth = 1
         tvBody.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
+        
+        btnLogout.layer.cornerRadius = 6
+    }
+    
+    @IBAction func onLogoutClicked(_ sender: Any) {
+        viewModel.logout()
     }
     
     private func bindViewModel() {

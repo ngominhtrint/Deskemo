@@ -11,6 +11,7 @@ import UIKit
 protocol FavoriteDetailNavigator {
     
     func toFavorites()
+    func toLogin()
 }
 
 class DefaultFavoriteDetailNavigator: FavoriteDetailNavigator {
@@ -23,5 +24,11 @@ class DefaultFavoriteDetailNavigator: FavoriteDetailNavigator {
     
     func toFavorites() {
         navigationController.popViewController(animated: true)
+    }
+    
+    func toLogin() {
+        if let tabBarController = navigationController.tabBarController {
+            tabBarController.dismiss(animated: true, completion: nil)
+        }
     }
 }

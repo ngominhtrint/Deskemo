@@ -35,6 +35,10 @@ final class FavoriteDetailViewModel: ViewModelType {
                       fetching: fetching,
                       error: errors)
     }
+    
+    func logout() {
+        navigator.toLogin()
+    }
 }
 
 extension FavoriteDetailViewModel {
