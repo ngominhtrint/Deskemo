@@ -17,28 +17,118 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-SO-cql">
-                                <rect key="frame" x="168" y="318" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-oz-soM">
-                                <rect key="frame" x="160" y="596" width="54" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up"/>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOp-c4-yAc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghd-yD-0wN">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-SO-cql">
+                                                <rect key="frame" x="16" y="321.5" width="343" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="La0-BH-Tq2"/>
+                                                </constraints>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dik-oz-soM">
+                                                <rect key="frame" x="16" y="381.5" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="n4n-mq-g1K"/>
+                                                </constraints>
+                                                <state key="normal" title="Sign Up"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-ld-DIP">
+                                                <rect key="frame" x="16" y="261.5" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="fy1-jn-M40"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9gC-Cc-uC2">
+                                                <rect key="frame" x="16" y="209.5" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="aPM-yq-p7j"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_eskimo" translatesAutoresizingMaskIntoConstraints="NO" id="6fk-ay-cDj">
+                                                <rect key="frame" x="123.5" y="49.5" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="1YX-wa-2ED"/>
+                                                    <constraint firstAttribute="height" constant="128" id="XLk-No-1yo"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dik-oz-soM" firstAttribute="leading" secondItem="Ghd-yD-0wN" secondAttribute="leading" constant="16" id="0iO-Uf-ZSr"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqb-SO-cql" secondAttribute="trailing" constant="16" id="3Dz-Ir-2wk"/>
+                                            <constraint firstItem="9gC-Cc-uC2" firstAttribute="leading" secondItem="Ghd-yD-0wN" secondAttribute="leading" constant="16" id="5C6-DW-XgY"/>
+                                            <constraint firstItem="y0H-ld-DIP" firstAttribute="leading" secondItem="Ghd-yD-0wN" secondAttribute="leading" constant="16" id="7or-Sx-hQn"/>
+                                            <constraint firstItem="6fk-ay-cDj" firstAttribute="centerX" secondItem="Ghd-yD-0wN" secondAttribute="centerX" id="AKE-8t-z1r"/>
+                                            <constraint firstItem="dik-oz-soM" firstAttribute="top" secondItem="vqb-SO-cql" secondAttribute="bottom" constant="16" id="GJj-7F-Y6V"/>
+                                            <constraint firstAttribute="trailing" secondItem="dik-oz-soM" secondAttribute="trailing" constant="16" id="MB4-Bo-mT8"/>
+                                            <constraint firstItem="9gC-Cc-uC2" firstAttribute="top" secondItem="6fk-ay-cDj" secondAttribute="bottom" constant="32" id="OvX-Ab-AeK"/>
+                                            <constraint firstItem="vqb-SO-cql" firstAttribute="top" secondItem="y0H-ld-DIP" secondAttribute="bottom" constant="16" id="P3I-ut-MRq"/>
+                                            <constraint firstAttribute="trailing" secondItem="y0H-ld-DIP" secondAttribute="trailing" constant="16" id="WHv-tE-cIg"/>
+                                            <constraint firstItem="vqb-SO-cql" firstAttribute="centerY" secondItem="Ghd-yD-0wN" secondAttribute="centerY" constant="20" id="YhT-5O-n68"/>
+                                            <constraint firstAttribute="trailing" secondItem="9gC-Cc-uC2" secondAttribute="trailing" constant="16" id="Z6e-lO-9hT"/>
+                                            <constraint firstItem="y0H-ld-DIP" firstAttribute="top" secondItem="9gC-Cc-uC2" secondAttribute="bottom" constant="8" id="bFU-2M-zL0"/>
+                                            <constraint firstItem="vqb-SO-cql" firstAttribute="leading" secondItem="Ghd-yD-0wN" secondAttribute="leading" constant="16" id="bQA-r6-sD6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ghd-yD-0wN" firstAttribute="width" secondItem="qOp-c4-yAc" secondAttribute="width" id="2Tt-Tp-0ZX"/>
+                                    <constraint firstItem="Ghd-yD-0wN" firstAttribute="top" secondItem="qOp-c4-yAc" secondAttribute="top" id="ExD-Mw-geY"/>
+                                    <constraint firstItem="Ghd-yD-0wN" firstAttribute="height" secondItem="qOp-c4-yAc" secondAttribute="height" id="Muo-Tf-ho6"/>
+                                    <constraint firstItem="Ghd-yD-0wN" firstAttribute="leading" secondItem="qOp-c4-yAc" secondAttribute="leading" id="NrY-6E-S6k"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ghd-yD-0wN" secondAttribute="trailing" id="XO7-zx-iv6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ghd-yD-0wN" secondAttribute="bottom" id="u39-wE-IvM"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qOp-c4-yAc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5GW-ff-Uvs"/>
+                            <constraint firstItem="qOp-c4-yAc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="I7Y-Cx-DId"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qOp-c4-yAc" secondAttribute="bottom" id="I8Y-os-IVJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOp-c4-yAc" secondAttribute="trailing" id="Sle-X1-Al5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="btnLogin" destination="vqb-SO-cql" id="2hB-te-YAX"/>
                         <outlet property="btnSignUp" destination="dik-oz-soM" id="G4T-hb-0tR"/>
+                        <outlet property="scrollView" destination="qOp-c4-yAc" id="hdC-up-x3O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="33"/>
+            <point key="canvasLocation" x="37.600000000000001" y="32.833583208395808"/>
         </scene>
         <!--User View Controller-->
         <scene sceneID="Yyb-mH-GNe">
@@ -233,4 +323,7 @@
             <point key="canvasLocation" x="1063" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_eskimo" width="257" height="257"/>
+    </resources>
 </document>

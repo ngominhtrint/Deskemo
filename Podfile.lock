@@ -15,6 +15,9 @@ PODS:
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
+  - RxKeyboard (0.9.0):
+    - RxCocoa (>= 4.3.1)
+    - RxSwift (>= 4.3.1)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - RxTest (4.4.0):
@@ -28,6 +31,7 @@ DEPENDENCIES:
   - RxBlocking
   - RxCocoa (~> 4.0)
   - RxDataSources
+  - RxKeyboard
   - RxSwift (~> 4.0)
   - RxTest
 
@@ -42,6 +46,7 @@ SPEC REPOS:
     - RxBlocking
     - RxCocoa
     - RxDataSources
+    - RxKeyboard
     - RxSwift
     - RxTest
 
@@ -55,9 +60,10 @@ SPEC CHECKSUMS:
   RxBlocking: 138ad53217434444d6eeeb4fb406a45431d92e31
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
+  RxKeyboard: 4f782303f499f41577b41c96c6a9a5d7acd51a47
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   RxTest: 19d03286bdc0a3aaea5d61d4cde31fdf4bb8a5ba
 
-PODFILE CHECKSUM: f937a6afe926afebe42a2c7da7805db5f6889aab
+PODFILE CHECKSUM: 55c350654d4abf4a600100d93fa5442e77e06b73
 
 COCOAPODS: 1.5.2

@@ -27,6 +27,7 @@ target 'Deskemo' do
   rx_cocoa
   rx_swift
   alamofire_pod
+  pod 'RxKeyboard'
   pod 'RxDataSources'
   pod 'QueryKit'
 
