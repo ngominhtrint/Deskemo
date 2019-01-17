@@ -36,7 +36,11 @@ class DefaultPostsNavigator: PostsNavigator {
     }
     
     func toPostDetail(post: Post) {
+        let postDetailNavigator = DefaultPostDetailNavigator.init(navigationController: navigationController)
         let postDetailViewController = storyboard.instantiateViewController(ofType: PostDetailViewController.self)
+        postDetailViewController.viewModel = PostDetailViewModel(useCase: services.makePostsUseCase(),
+                                                                 navigator: postDetailNavigator,
+                                                                 post: post)
         navigationController.pushViewController(postDetailViewController, animated: true)
     }
 }

@@ -7,24 +7,73 @@
 //
 
 import UIKit
+import Domain
+import RxSwift
+import RxCocoa
+import RxKeyboard
 
 class FavoriteDetailViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var ivCover: UIImageView!
+    @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var tvBody: UITextView!
+    
+    let disposeBag = DisposeBag()
+    var loginViewModel: LoginViewModel!
+    var viewModel: FavoriteDetailViewModel!
+    var post: Post!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupView()
+        bindViewModel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupView() {
+        self.navigationItem.title = "Favorite Detail"
+        scrollView.keyboardDismissMode = .interactive
+        
+        tvBody.layer.cornerRadius = 6
+        tvBody.layer.borderWidth = 1
+        tvBody.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
     }
-    */
+    
+    private func bindViewModel() {
+        assert(viewModel != nil)
+        let viewWillAppear = rx.sentMessage(#selector(UIViewController.viewWillAppear(_:)))
+            .mapToVoid()
+            .asDriverOnErrorJustComplete()
+        let input = FavoriteDetailViewModel.Input(trigger: viewWillAppear)
+        
+        let output = viewModel.transform(input: input)
+        
+        bindPost(output.post)
+        bindKeyboard()
+    }
+    
+    private func bindPost(_ post: Driver<Post>) {
+        post.drive(onNext: { [weak self] post in
+            guard let strongSelf = self else { return }
+            
+            strongSelf.post = post
+            
+            if let url = URL(string: post.imageUrl) {
+                strongSelf.ivCover.af_setImage(withURL: url)
+            }
+            strongSelf.tfTitle.text = post.title.uppercased()
+            strongSelf.tvBody.text = post.body
+        })
+        .disposed(by: disposeBag)
+    }
+    
+    private func bindKeyboard() {
+        RxKeyboard.instance.visibleHeight
+            .drive(onNext: { keyboardVisibleHeight in
+                self.scrollView.contentInset.bottom = keyboardVisibleHeight
+            })
+            .disposed(by: disposeBag)
+    }
 
 }

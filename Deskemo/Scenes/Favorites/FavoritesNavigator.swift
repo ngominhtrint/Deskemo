@@ -38,7 +38,11 @@ class DefaultFavoritesNavigator: FavoritesNavigator {
     }
     
     func toFavorite(post: Post) {
+        let favoriteDetailNavigator = DefaultFavoriteDetailNavigator(navigationController: navigationController)
         let favoriteDetailViewController = storyboard.instantiateViewController(ofType: FavoriteDetailViewController.self)
+        favoriteDetailViewController.viewModel = FavoriteDetailViewModel(postUseCase: services.makePostsUseCase(),
+                                                                         navigator: favoriteDetailNavigator,
+                                                                         post: post)
         navigationController.pushViewController(favoriteDetailViewController, animated: true)
     }
 }

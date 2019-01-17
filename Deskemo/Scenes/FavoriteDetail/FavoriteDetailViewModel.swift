@@ -14,24 +14,25 @@ import RxCocoa
 final class FavoriteDetailViewModel: ViewModelType {
     
     private let postUseCase: PostsUseCase
-    private let userUseCase: UserUseCase
-    private let navigator: PostsNavigator
+    private let navigator: FavoriteDetailNavigator
     
-    init(postUseCase: PostsUseCase, userUseCase: UserUseCase, navigator: PostsNavigator) {
+    private let post = BehaviorRelay<Post>(value: Post(body: "", title: "", imageUrl: "", isFavorite: false))
+    
+    init(postUseCase: PostsUseCase, navigator: FavoriteDetailNavigator, post: Post) {
         self.postUseCase = postUseCase
-        self.userUseCase = userUseCase
         self.navigator = navigator
+        self.post.accept(post)
     }
     
     func transform(input: FavoriteDetailViewModel.Input) -> FavoriteDetailViewModel.Output {
         let activityIndicator = ActivityIndicator()
         let errorTracker = ErrorTracker()
         
-        
         let fetching = activityIndicator.asDriver()
         let errors = errorTracker.asDriver()
         
-        return Output(fetching: fetching,
+        return Output(post: post.asDriver(),
+                      fetching: fetching,
                       error: errors)
     }
 }
@@ -40,10 +41,10 @@ extension FavoriteDetailViewModel {
     
     struct Input {
         let trigger: Driver<Void>
-        let selection: Driver<IndexPath>
     }
     
     struct Output {
+        let post: Driver<Post>
         let fetching: Driver<Bool>
         let error: Driver<Error>
     }

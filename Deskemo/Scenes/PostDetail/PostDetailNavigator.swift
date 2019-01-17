@@ -10,7 +10,7 @@ import UIKit
 
 protocol PostDetailNavigator {
     
-    func toItems()
+    func toPosts()
 }
 
 class DefaultPostDetailNavigator: PostDetailNavigator {
@@ -21,7 +21,7 @@ class DefaultPostDetailNavigator: PostDetailNavigator {
         self.navigationController = navigationController
     }
     
-    func toItems() {
+    func toPosts() {
         navigationController.popViewController(animated: true)
     }
 }

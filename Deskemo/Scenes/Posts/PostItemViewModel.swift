@@ -18,4 +18,9 @@ final class PostItemViewModel {
         self.title = post.title.uppercased()
         self.subtitle = post.body
     }
+    
+    public static func initState() -> PostItemViewModel {
+        let post = Post.init(body: "", title: "", imageUrl: "", isFavorite: false)
+        return PostItemViewModel(with: post)
+    }
 }
