@@ -14,10 +14,10 @@ The following **required** functionality is completed:
 - [x] Does not need to implement authentication.
 
 ### Screen 2: Sign up screen
-- [] Should be able to add picture from
+- [ ] Should be able to add picture from
 Gallery/Photos.
 - [x] Input fields for user to enter details.
-- [] Save data locally (to be reflected in screen 5)
+- [ ] Save data locally (to be reflected in screen 5)
 - [x] onClick() of Sign Up button, navigate to
 Screen 3.
 
@@ -35,7 +35,7 @@ Screen 3.
 
 ### Screen 5 - User screen
 - [x] Show information of logged in user. (with dummy data).
-- [] If user go through screen 2, show information
+- [ ] If user go through screen 2, show information
 entered from there.
 
 ### Screen 6 - Favorite screen
@@ -58,7 +58,7 @@ While building the app, I am using technicals below:
 - [x] Autolayout.
 - [x] Isolate modules.
 - [x] Generic protocols.
-- [] Unit testing.
+- [ ] Unit testing.
 
 ## Screenshots
 
@@ -76,9 +76,8 @@ Favorites                               |  Favorite Detail
 :--------------------------------------:|:-------------------------:
 ![Favorites](screenshots/favorites.png) |  ![FavoriteDetail](screenshots/favorite.png)
 
-User                              |  
-:--------------------------------:|:-------------------------:
-![User](screenshots/user.png)     |  
+
+![User](screenshots/user.png) 
 
 
 ## License
