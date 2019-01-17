@@ -43,11 +43,14 @@ class PostsViewController: UIViewController {
             .asDriver()
         
         let input = PostsViewModel.Input(trigger: Driver.merge(viewWillAppear, pull),
+                                         preloadTrigger: Driver.just(Void()),
                                          selection: tableView.rx.itemSelected.asDriver())
         let output = viewModel.transform(input: input)
         
-        output.posts.drive(tableView.rx.items(cellIdentifier: PostCell.reuseID, cellType: PostCell.self)) { tv, viewModel, cell in
+        output.posts.drive(tableView.rx.items(cellIdentifier: PostCell.reuseID, cellType: PostCell.self)) { row, viewModel, cell in
             cell.bind(viewModel)
+            cell.position = row
+            cell.delegate = self
         }
         .disposed(by: disposeBag)
         
@@ -62,5 +65,12 @@ class PostsViewController: UIViewController {
 
     private func registerCell() {
         tableView.register(UINib.init(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: PostCell.reuseID)
+    }
+}
+
+extension PostsViewController: PostCellDelegate {
+    
+    func didClickFavorite(_ post: Post, _ position: Int) {
+        viewModel.favorite(post, position)
     }
 }

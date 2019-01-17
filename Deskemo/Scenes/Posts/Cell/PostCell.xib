@@ -26,41 +26,55 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV1-XK-0OW">
-                        <rect key="frame" x="104" y="21" width="247" height="21"/>
+                        <rect key="frame" x="104" y="21" width="211" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-wV-TNo">
-                        <rect key="frame" x="104" y="50" width="247" height="20.5"/>
+                        <rect key="frame" x="104" y="50" width="215" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSh-eZ-bSM">
-                        <rect key="frame" x="104" y="78.5" width="247" height="18"/>
+                        <rect key="frame" x="104" y="78.5" width="211" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxm-E7-Hkr">
+                        <rect key="frame" x="323" y="49" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="H23-rF-Xyg"/>
+                            <constraint firstAttribute="width" constant="32" id="Jf7-6t-YWC"/>
+                        </constraints>
+                        <state key="normal" image="ic_star_unselected"/>
+                        <connections>
+                            <action selector="onFavoriteClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lnv-Ay-hH2"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="kV1-XK-0OW" firstAttribute="top" secondItem="qYD-dX-aRO" secondAttribute="top" id="4Sw-bE-5Su"/>
                     <constraint firstItem="qYD-dX-aRO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9DM-YF-MiD"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="aSh-eZ-bSM" secondAttribute="trailing" constant="8" id="Ogn-Ae-tGD"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="kV1-XK-0OW" secondAttribute="trailing" constant="8" id="P1Y-dO-Pd6"/>
+                    <constraint firstItem="vxm-E7-Hkr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EdL-iO-jzz"/>
+                    <constraint firstItem="vxm-E7-Hkr" firstAttribute="leading" secondItem="ajf-wV-TNo" secondAttribute="trailing" constant="4" id="Obd-v7-XsO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aSh-eZ-bSM" secondAttribute="trailing" constant="44" id="Ogn-Ae-tGD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kV1-XK-0OW" secondAttribute="trailing" constant="44" id="P1Y-dO-Pd6"/>
                     <constraint firstItem="kV1-XK-0OW" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="WMg-q0-wbj"/>
                     <constraint firstItem="ajf-wV-TNo" firstAttribute="top" secondItem="kV1-XK-0OW" secondAttribute="bottom" constant="8" id="ZIc-dZ-R3n"/>
                     <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="aSh-eZ-bSM" secondAttribute="bottom" constant="13" id="bDs-Ct-rjT"/>
                     <constraint firstItem="ajf-wV-TNo" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="cJu-ME-L3k"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ajf-wV-TNo" secondAttribute="trailing" constant="8" id="i22-wq-Gr8"/>
                     <constraint firstItem="aSh-eZ-bSM" firstAttribute="leading" secondItem="qYD-dX-aRO" secondAttribute="trailing" constant="8" id="iip-lF-LYe"/>
                     <constraint firstItem="aSh-eZ-bSM" firstAttribute="top" secondItem="ajf-wV-TNo" secondAttribute="bottom" constant="8" id="lKu-cL-Ssk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vxm-E7-Hkr" secondAttribute="trailing" constant="4" id="la8-q8-tQZ"/>
                     <constraint firstItem="qYD-dX-aRO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="niX-nW-ZtP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnFavorite" destination="vxm-E7-Hkr" id="2y4-Ej-SV9"/>
                 <outlet property="ivCover" destination="qYD-dX-aRO" id="uxm-SL-XlP"/>
                 <outlet property="lbBody" destination="ajf-wV-TNo" id="I4M-by-FGh"/>
                 <outlet property="lbTitle" destination="kV1-XK-0OW" id="PVZ-Vm-dsd"/>
@@ -69,4 +83,7 @@
             <point key="canvasLocation" x="-412" y="83"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_star_unselected" width="48" height="48"/>
+    </resources>
 </document>

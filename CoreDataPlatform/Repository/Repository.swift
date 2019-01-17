@@ -18,7 +18,6 @@ protocol AbstractRepository {
                sortDescriptors: [NSSortDescriptor]?) -> Observable<[T]>
     func save(entity: T) -> Observable<Void>
     func delete(entity: T) -> Observable<Void>
-    func deleteAll(sortDescriptors: [NSSortDescriptor]?) -> Observable<Void>
 }
 
 final class Repository<T: CoreDataRepresentable>: AbstractRepository where T == T.CoreDataType.DomainType {
@@ -51,15 +50,5 @@ final class Repository<T: CoreDataRepresentable>: AbstractRepository where T == 
         return entity.sync(in: context)
             .map { $0 as! NSManagedObject }
             .flatMapLatest(context.rx.delete)
-    }
-    
-    func deleteAll(sortDescriptors: [NSSortDescriptor]?) -> Observable<Void> {
-        return query(with: nil, sortDescriptors: sortDescriptors)
-            .flatMapLatest {
-                Observable.from($0)
-                    .flatMapLatest { self.delete(entity: $0) }
-            }
-            .mapToVoid()
-            .subscribeOn(scheduler)
     }
 }

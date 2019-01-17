@@ -19,12 +19,12 @@ final class PostsUseCase<Repository>: Domain.PostsUseCase where Repository: Abst
     }
     
     func posts() -> Observable<[Post]> {
-        return repository.query(with: nil, sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
+        return repository.query(with: nil, sortDescriptors: [Post.CoreDataType.title.descending()])
     }
     
     func favoritePosts() -> Observable<[Post]> {
         return repository.query(with: NSPredicate(format: "isFavorite = %@", NSNumber(value: true)),
-                                sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
+                                sortDescriptors: [Post.CoreDataType.title.descending()])
     }
     
     func save(post: Post) -> Observable<Void> {
@@ -33,9 +33,5 @@ final class PostsUseCase<Repository>: Domain.PostsUseCase where Repository: Abst
     
     func delete(post: Post) -> Observable<Void> {
         return repository.delete(entity: post)
-    }
-    
-    func deleteAll() -> Observable<Void> {
-        return repository.deleteAll(sortDescriptors: [Post.CoreDataType.updatedAt.descending()])
     }
 }

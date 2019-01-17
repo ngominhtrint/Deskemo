@@ -33,8 +33,18 @@ public struct Post: Codable {
         self.isFavorite = isFavorite
     }
     
-    public init(body: String, title: String, imageUrl: String) {
-        self.init(body: body, title: title, uid: NSUUID().uuidString, userId: "5", updatedAt: String(round(Date().timeIntervalSince1970 * 1000)), imageUrl: imageUrl, isFavorite: true)
+    public init(body: String, title: String, imageUrl: String, isFavorite: Bool) {
+        self.init(body: body, title: title, uid: NSUUID().uuidString, userId: "5", updatedAt: String(round(Date().timeIntervalSince1970 * 1000)), imageUrl: imageUrl, isFavorite: isFavorite)
+    }
+    
+    public init(post: Post, isFavorite: Bool) {
+        self.init(body: post.body,
+                  title: post.title,
+                  uid: post.uid,
+                  userId: post.userId,
+                  updatedAt: post.updatedAt,
+                  imageUrl: post.imageUrl,
+                  isFavorite: isFavorite)
     }
     
     private enum CodingKeys: String, CodingKey {
