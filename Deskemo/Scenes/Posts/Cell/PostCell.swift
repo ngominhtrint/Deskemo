@@ -36,7 +36,10 @@ final class PostCell: UITableViewCell {
 
         self.lbTitle.text = viewModel.title
         self.lbBody.text = viewModel.subtitle
-        self.lbUpdatedAt.text = viewModel.post.updatedAt
+        
+        let milliseconds: Double = Double(viewModel.post.updatedAt) ?? 0
+        let date = Date.init(milliseconds: milliseconds)
+        self.lbUpdatedAt.text = String(describing: date)
         self.btnFavorite.setImage(viewModel.post.isFavorite ?
             UIImage(named: "ic_star_selected") : UIImage(named: "ic_star_unselected"), for: .normal)
     }

@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [x] Does not need to implement authentication.
 
 ### Screen 2: Sign up screen
-- [ ] Should be able to add picture from
+- [x] Should be able to add picture from
 Gallery/Photos.
 - [x] Input fields for user to enter details.
 - [ ] Save data locally (to be reflected in screen 5)

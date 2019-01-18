@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var tvBio: UITextView!
     
+    lazy var avatarTap = UITapGestureRecognizer()
     var signUpViewModel: SignUpViewModel!
     let disposeBag = DisposeBag()
     
@@ -39,16 +40,30 @@ class SignUpViewController: UIViewController {
         tvBio.layer.cornerRadius = 6
         tvBio.layer.borderWidth = 1
         tvBio.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
+        
+        ivAvatar.contentMode = .scaleAspectFit
+        ivAvatar.isUserInteractionEnabled = true
+        ivAvatar.addGestureRecognizer(avatarTap)
     }
     
     private func bindViewModel() {
         assert(signUpViewModel != nil)
         
-        let input = SignUpViewModel.Input(signUpTrigger: btnSignUp.rx.tap.asDriver())
+        let input = SignUpViewModel.Input(signUpTrigger: btnSignUp.rx.tap.asDriver(),
+                                          pickImageTrigger: avatarTap.rx.event.asDriver())
         
-        let _ = signUpViewModel.transform(input: input)
+        let output = signUpViewModel.transform(input: input)
         
+        bindCoverImage(output.imagePicked)
         bindKeyboard()
+    }
+    
+    private func bindCoverImage(_ image: Driver<UIImage>) {
+        image.drive(onNext: { [weak self] image in
+            guard let strongSelf = self else { return }
+            strongSelf.ivAvatar.image = image
+        })
+        .disposed(by: disposeBag)
     }
     
     private func bindKeyboard() {

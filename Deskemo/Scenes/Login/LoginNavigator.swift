@@ -37,11 +37,12 @@ class DefaultLoginNavigator: LoginNavigator {
     }
     
     func toSignUp() {
+        let imageManager = ImageManager(viewController: navigationController)
         let signUpNavigator = DefaultSignUpNavigator(storyboard: storyboard,
                                                      navigationController: navigationController,
                                                      mainNavigator: mainNavigator)
         let signUpViewController = storyboard.instantiateViewController(ofType: SignUpViewController.self)
-        signUpViewController.signUpViewModel = SignUpViewModel(navigator: signUpNavigator)
+        signUpViewController.signUpViewModel = SignUpViewModel(navigator: signUpNavigator, imageManager: imageManager)
         navigationController.pushViewController(signUpViewController, animated: true)
     }
     

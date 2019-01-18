@@ -21,6 +21,11 @@
 		EB2EA17321EDF9AB00112168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2EA17121EDF9AB00112168 /* LaunchScreen.storyboard */; };
 		EB2EA17E21EDF9AB00112168 /* DeskemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA17D21EDF9AB00112168 /* DeskemoTests.swift */; };
 		EB2EA18921EDF9AB00112168 /* DeskemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */; };
+		EB41255521F1DD830094DD34 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41255421F1DD830094DD34 /* ImageManager.swift */; };
+		EB41255821F1DDEE0094DD34 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41255721F1DDEE0094DD34 /* RxImagePickerDelegateProxy.swift */; };
+		EB41255A21F1DE7F0094DD34 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41255921F1DE7F0094DD34 /* UIImagePickerController+RxCreate.swift */; };
+		EB41255C21F1DEB30094DD34 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41255B21F1DEB30094DD34 /* UIImagePickerController+Rx.swift */; };
+		EB41255E21F211780094DD34 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB41255D21F211780094DD34 /* Date+Ext.swift */; };
 		EBC7C09B21F0540E00E95E34 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7C09A21F0540E00E95E34 /* SettingManager.swift */; };
 		EBC7C09D21F0546300E95E34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7C09C21F0546300E95E34 /* Constants.swift */; };
 		EBE2944721EE18520089B88B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2943E21EE18520089B88B /* Domain.framework */; };
@@ -202,6 +207,11 @@
 		EB2EA18421EDF9AB00112168 /* DeskemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeskemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2EA18821EDF9AB00112168 /* DeskemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskemoUITests.swift; sourceTree = "<group>"; };
 		EB2EA18A21EDF9AB00112168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB41255421F1DD830094DD34 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		EB41255721F1DDEE0094DD34 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		EB41255921F1DE7F0094DD34 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		EB41255B21F1DEB30094DD34 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		EB41255D21F211780094DD34 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		EBC7C09A21F0540E00E95E34 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
 		EBC7C09C21F0546300E95E34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EBE2943E21EE18520089B88B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -445,10 +455,22 @@
 			path = DeskemoUITests;
 			sourceTree = "<group>";
 		};
+		EB41255621F1DDE10094DD34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB41255721F1DDEE0094DD34 /* RxImagePickerDelegateProxy.swift */,
+				EB41255921F1DE7F0094DD34 /* UIImagePickerController+RxCreate.swift */,
+				EB41255B21F1DEB30094DD34 /* UIImagePickerController+Rx.swift */,
+				EB41255D21F211780094DD34 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EBC7C09921F053BF00E95E34 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				EBC7C09A21F0540E00E95E34 /* SettingManager.swift */,
+				EB41255421F1DD830094DD34 /* ImageManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -673,6 +695,7 @@
 		EBE294D221EED6D50089B88B /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				EB41255621F1DDE10094DD34 /* Extensions */,
 				EBE294D321EED6EC0089B88B /* Reusable.swift */,
 				EBE294E221EF0B210089B88B /* Observable+Ext.swift */,
 				EBE294E421EF0B3A0089B88B /* ActivityIndicator.swift */,
@@ -1246,6 +1269,8 @@
 				EBE294C921EECD280089B88B /* LoginNavigator.swift in Sources */,
 				EBE294F121EF0D4B0089B88B /* PostDetailViewController.swift in Sources */,
 				EBE294F321EF0E240089B88B /* FavoriteDetailViewModel.swift in Sources */,
+				EB41255821F1DDEE0094DD34 /* RxImagePickerDelegateProxy.swift in Sources */,
+				EB41255A21F1DE7F0094DD34 /* UIImagePickerController+RxCreate.swift in Sources */,
 				EBE294D821EEDB4B0089B88B /* SignUpViewModel.swift in Sources */,
 				EBE294DD21EF040A0089B88B /* FavoritesViewController.swift in Sources */,
 				EB2EA16E21EDF9AA00112168 /* Deskemo.xcdatamodeld in Sources */,
@@ -1254,7 +1279,9 @@
 				EBE2950021EF41660089B88B /* FavoritesViewModel.swift in Sources */,
 				EBE2950221EF419B0089B88B /* FavoriteItemViewModel.swift in Sources */,
 				EBE294D621EEDAD10089B88B /* SignUpViewController.swift in Sources */,
+				EB41255C21F1DEB30094DD34 /* UIImagePickerController+Rx.swift in Sources */,
 				EBE294C721EECD190089B88B /* SignUpNavigator.swift in Sources */,
+				EB41255521F1DD830094DD34 /* ImageManager.swift in Sources */,
 				EBE2950621EF76800089B88B /* UserCell.swift in Sources */,
 				EBE294EB21EF0C500089B88B /* PostDetailNavigator.swift in Sources */,
 				EBE294F721EF11170089B88B /* PostsViewModel.swift in Sources */,
@@ -1263,6 +1290,7 @@
 				EBE294DF21EF042F0089B88B /* PostsViewController.swift in Sources */,
 				EBE294C321EECA0F0089B88B /* UserNavigator.swift in Sources */,
 				EBE294CD21EECD5B0089B88B /* PostsNavigator.swift in Sources */,
+				EB41255E21F211780094DD34 /* Date+Ext.swift in Sources */,
 				EBE294F921EF13770089B88B /* PostItemViewModel.swift in Sources */,
 				EBE294DA21EF017C0089B88B /* MainNavigator.swift in Sources */,
 				EB2EA16621EDF9AA00112168 /* AppDelegate.swift in Sources */,
